@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <div class="header-menu-container">
+        <picture>
+          <source
+            media="(max-width: 500px)"
+            srcset="./img/mobile/logo_mobile.png"
+          />
+          <img src="./img/mobile/logo_mobile.png" alt="logo" />
+        </picture>
+        <div class="hamburger" onclick="toggleMobileMenu(this)">
+          <div class="barOne"></div>
+          <div class="barTwo"></div>
+          <div class="barThree"></div>
+        </div>
+        <div class="mobile-menu hide">
+          <span>Home</span>
+          <span>Nossas lojas</span>
+          <span>Novidades</span>
+          <span>Promoções</span>
+        </div>
+      </div>
+      <div class="header-search-container">
+        <input class="header-search-input" type="text" placeholder="Digite o produto">
+        <button class="header-search-button">Search</button>
+      </div>
+    </section>
+  </body>
+  <script src="index.js"></script>
+</html>
