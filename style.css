@@ -226,6 +226,14 @@
   .banner-container img{
     margin-top: -3px;
   }
+
+  .category-item {
+    flex: 33%;
+  }
+
+  .category-items-container {
+    padding: 0 15px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -235,5 +243,13 @@
 
   .header-search-input {
     width: 170px;
+  }
+
+  .category-items-container {
+    flex-wrap: nowrap;
+  }
+
+  .category-item {
+    flex: unset;
   }
 }
